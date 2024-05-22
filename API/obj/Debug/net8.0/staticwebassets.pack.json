@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\3rdpartylicenses.txt",
+      "PackagePath": "staticwebassets\\3rdpartylicenses.txt"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\browser\\favicon.ico",
+      "PackagePath": "staticwebassets\\browser\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\browser\\index.html",
+      "PackagePath": "staticwebassets\\browser\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\browser\\main-4Q3NFGYA.js",
+      "PackagePath": "staticwebassets\\browser\\main-4Q3NFGYA.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\browser\\polyfills-LZBJRJJE.js",
+      "PackagePath": "staticwebassets\\browser\\polyfills-LZBJRJJE.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\browser\\scripts-VQNG47P6.js",
+      "PackagePath": "staticwebassets\\browser\\scripts-VQNG47P6.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\browser\\styles-PDNHLCNM.css",
+      "PackagePath": "staticwebassets\\browser\\styles-PDNHLCNM.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\files\\response.pdf",
+      "PackagePath": "staticwebassets\\files\\response.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.API.props",
+      "PackagePath": "build\\API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.API.props",
+      "PackagePath": "buildMultiTargeting\\API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.API.props",
+      "PackagePath": "buildTransitive\\API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
