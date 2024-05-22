@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0UD58pro3akBym8os7FD/jfBtmxOTs16piux0mUJKik=",
+  "Hash": "oNjrYRg67mgnLL99vsXs/xerATKsjHkjOmMsAH3+SXM=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "API\\wwwroot",
       "Source": "API",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\3rdpartylicenses.txt",
+      "Identity": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\3rdpartylicenses.txt",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "3rdpartylicenses.txt",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\3rdpartylicenses.txt"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\browser\\favicon.ico",
+      "Identity": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\favicon.ico",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "browser/favicon.ico",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\browser\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\browser\\index.html",
+      "Identity": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\index.html",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "browser/index.html",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\browser\\index.html"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\browser\\main-4Q3NFGYA.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\main-4Q3NFGYA.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "browser/main-4Q3NFGYA.js",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\browser\\main-4Q3NFGYA.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\browser\\polyfills-LZBJRJJE.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\polyfills-LZBJRJJE.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "browser/polyfills-LZBJRJJE.js",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\browser\\polyfills-LZBJRJJE.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\browser\\scripts-VQNG47P6.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\scripts-VQNG47P6.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "browser/scripts-VQNG47P6.js",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\browser\\scripts-VQNG47P6.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\browser\\styles-PDNHLCNM.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\styles-PDNHLCNM.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "browser/styles-PDNHLCNM.css",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\browser\\styles-PDNHLCNM.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\files\\response.pdf",
+      "Identity": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\files\\response.pdf",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\SharpTest\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "files/response.pdf",
       "AssetKind": "All",

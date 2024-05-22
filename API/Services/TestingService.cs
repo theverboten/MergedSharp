@@ -11,7 +11,8 @@ namespace API.Services
         public bool FileExistTest(string name)
         {
 
-            if (File.Exists(@"C:\Users\hp\Desktop\SharpTest\API\wwwroot\files\" + name)) { return true; } else { return false; }
+            if (File.Exists(@"../API/wwwroot/files/" + name)) { return true; } else { return false; }
+
 
         }
 
