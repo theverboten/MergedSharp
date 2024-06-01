@@ -235,6 +235,15 @@ namespace API.Controllers
 
         }
 
+
+        [HttpGet]
+        [Route("get-project-name")]
+        public void GetProjectName()
+        {
+            string projectName = System.IO.Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location).ToString();
+            Console.WriteLine("Project name is: " + projectName);
+        }
+
         /*
         public void HttpClientDownload()
         {

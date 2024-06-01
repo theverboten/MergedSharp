@@ -13,10 +13,10 @@ namespace API.Services
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
         {
-            services.AddDbContext<DataContext>(opt =>
-            {
-                opt.UseNpgsql(config.GetConnectionString("DefaultConnection"));
-            });
+            /* services.AddDbContext<DataContext>(opt =>
+             {
+                 opt.UseNpgsql(config.GetConnectionString("DefaultConnection"));
+             });*/
 
             services.AddScoped<GoogleService>();
             services.AddScoped<IStringConvertService, StringConvertService>();
