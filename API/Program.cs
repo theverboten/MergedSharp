@@ -54,10 +54,10 @@ var connString = "";
 if (builder.Environment.IsDevelopment())
     connString = builder.Configuration.GetConnectionString("DefaultConnection");
 else
-{
+{/*
     // Use connection string provided at runtime by FlyIO.
     var connUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
-
+    Console.WriteLine(connUrl);
     // Parse connection URL to connection string for Npgsql
     connUrl = connUrl.Replace("postgres://", string.Empty);
     var pgUserPass = connUrl.Split("@")[0];
@@ -71,6 +71,7 @@ else
     var updatedHost = pgHost.Replace("flycast", "internal");
 
     connString = $"Server={updatedHost};Port={pgPort};User Id={pgUser};Password={pgPass};Database={pgDb};";
+*/
 }
 builder.Services.AddDbContext<DataContext>(opt =>
 {
