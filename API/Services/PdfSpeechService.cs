@@ -157,12 +157,18 @@ namespace API.Services
             Console.WriteLine("******");
             /* await Task.Delay(2000);*/
             var jsonResponse = await response.Content.ReadAsStringAsync();
+            Console.WriteLine("11");
             dynamic data = JObject.Parse(jsonResponse);
+            Console.WriteLine("22");
             string base64BinaryStr = data.content;
+            Console.WriteLine("33");
             string refinedBase64 = base64BinaryStr.Replace("data:application/pdf;base64,", String.Empty);
+            Console.WriteLine("44");
             byte[] bytes = Convert.FromBase64String(refinedBase64);
+            Console.WriteLine("55");
             /*  File.WriteAllBytes("http://localhost:5059/files/response.pdf", bytes);*/
             File.WriteAllBytes(@"../API/wwwroot/files/response.pdf", bytes);
+            Console.WriteLine("66");
 
             var input = _pdfStringService.ExtractTextFromPdf();
             /*  Console.WriteLine("V Pdf mezipaměti je " + input);*/

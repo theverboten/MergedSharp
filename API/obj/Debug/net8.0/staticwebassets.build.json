@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oNjrYRg67mgnLL99vsXs/xerATKsjHkjOmMsAH3+SXM=",
+  "Hash": "eH7SKaVKyDenePCf2214hWbZuoM5wAvLyAv4wQfOexM=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -74,12 +74,12 @@
       "OriginalItemSpec": "wwwroot\\browser\\index.html"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\main-4Q3NFGYA.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\main-S47ZJVFT.js",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "browser/main-4Q3NFGYA.js",
+      "RelativePath": "browser/main-S47ZJVFT.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,7 +90,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\browser\\main-4Q3NFGYA.js"
+      "OriginalItemSpec": "wwwroot\\browser\\main-S47ZJVFT.js"
     },
     {
       "Identity": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\polyfills-LZBJRJJE.js",

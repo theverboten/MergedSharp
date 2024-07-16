@@ -26,26 +26,26 @@ namespace API.Controllers
 
            return data;
        }
+       */
+        [HttpGet("{id}")]
+        public ActionResult<ConvertedPdf> GetPdfById(int id)
+        {
+            var pdf = _context.StoredPdf.Find(id);
+            if (pdf == null)
+            {
+                return NotFound();
+            }
+            return pdf;
+        }
 
-       [HttpGet("{id}")]
-       public ActionResult<ConvertedPdf> GetPdfById(int id)
-       {
-           var pdf = _context.StoredPdf.Find(id);
-           if (pdf == null)
-           {
-               return NotFound();
-           }
-           return pdf;
-       }
+        [HttpPost("post-data")]
 
-       [HttpPost("post-data")]
-
-       public ActionResult<ConvertedPdf> Create([FromBody] ConvertedPdf convertedPdf)
-       {
-           _context.StoredPdf.Add(convertedPdf);
-           _context.SaveChanges();
-           return CreatedAtAction(nameof(GetPdfById), new { id = convertedPdf.Id, }, convertedPdf);
-       }
+        public ActionResult<ConvertedPdf> Create([FromBody] ConvertedPdf convertedPdf)
+        {
+            _context.StoredPdf.Add(convertedPdf);
+            _context.SaveChanges();
+            return CreatedAtAction(nameof(GetPdfById), new { id = convertedPdf.Id, }, convertedPdf);
+        }/*
 
        [HttpPut("put-data")]
 
@@ -73,6 +73,20 @@ namespace API.Controllers
         public ActionResult<ConvertedPdf> UpdatePdfWithId(ConvertedPdf information, int id)
         {
             Console.WriteLine("Information was received");
+            Console.WriteLine(id);
+            Console.WriteLine("Information was received");
+            ConvertedPdf databasePdf = new ConvertedPdf { Id = id, PdfName = information.PdfName, Content = information.Content };
+            Console.WriteLine(databasePdf.PdfName);
+            _context.StoredPdf.Update(databasePdf);
+            _context.SaveChanges();
+            return Ok();
+        }
+
+        [HttpPut("database-check/{id}")]
+
+        public ActionResult<ConvertedPdf> DatabaseCheck(ConvertedPdf information, int id)
+        {
+            Console.WriteLine("Information was receive");
             Console.WriteLine(id);
             Console.WriteLine("Information was received");
             ConvertedPdf databasePdf = new ConvertedPdf { Id = id, PdfName = information.PdfName, Content = information.Content };
