@@ -87,7 +87,8 @@ namespace API.Controllers
                 Console.WriteLine("Pdf has too much pages. Limit is 3.");
                 return BadRequest();
 
-            };
+            }
+            ;
 
 
 
@@ -190,8 +191,11 @@ namespace API.Controllers
         {
             await Task.Delay(1000);
             string fileName = filename.Replace(".pdf", String.Empty); ;
-            Console.WriteLine(fileName);
-            Stream stream = await _httpClient.GetStreamAsync("http://localhost:5059/files/" + fileName + ".mp3");
+            Console.WriteLine("DownloadByStream: " + fileName);
+
+            /*  Stream stream = await _httpClient.GetStreamAsync(@"wwwroot/files/" + fileName + ".mp3");*/
+            Stream stream = await _httpClient.GetStreamAsync(@"https://ctecka.fly.dev/files/" + fileName + ".mp3");//pokus s https protokolem
+
 
             if (stream == null)
                 return NotFound(); // returns a NotFoundResult with Status404NotFound response.
@@ -211,8 +215,9 @@ namespace API.Controllers
         public async Task<IActionResult> Delete(string filename)
         {
             await Task.Delay(100);
-            string fileName = filename.Replace(".pdf", String.Empty); ;
-            _stringConvertService.DeleteSpeech(fileName);
+            /*
+            string fileName = filename.Replace(".pdf", String.Empty); ;*/
+            _stringConvertService.DeleteSpeech(filename);
 
             return Ok();
 
@@ -228,7 +233,7 @@ namespace API.Controllers
 
             await Download(filename);
 
-            /*  await Delete(filename);*/
+            await Delete(filename);
 
             return Ok();
 

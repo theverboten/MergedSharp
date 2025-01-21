@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eH7SKaVKyDenePCf2214hWbZuoM5wAvLyAv4wQfOexM=",
+  "Hash": "wBu5GpRDJ5YXhXcifcuYiSwnMtta/L8p/izSPr/N2zA=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -22,15 +22,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "3rdpartylicenses.txt",
+      "RelativePath": "3rdpartylicenses#[.{fingerprint}]?.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "gdth67fahm",
+      "Integrity": "9GBai5nTLjRQynG58UVJFrOEwstj2ZHuR0KbU/+OVGI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\3rdpartylicenses.txt"
@@ -41,15 +43,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "browser/favicon.ico",
+      "RelativePath": "browser/favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "vagikyz9qx",
+      "Integrity": "+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\browser\\favicon.ico"
@@ -60,37 +64,41 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "browser/index.html",
+      "RelativePath": "browser/index#[.{fingerprint}]?.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "611qxe5i5w",
+      "Integrity": "uhDGYHxFjfkopBEy0GhUJjTKaBxUpWtR3eDCrL8bxGM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\browser\\index.html"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\main-S47ZJVFT.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\main-HMHDR67Q.js",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "browser/main-S47ZJVFT.js",
+      "RelativePath": "browser/main-HMHDR67Q#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "zkr5koycc3",
+      "Integrity": "4y5ndTZmRBtro9F9JJCy+4wRqg8Rvx8au6sEqleiuVw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\browser\\main-S47ZJVFT.js"
+      "OriginalItemSpec": "wwwroot\\browser\\main-HMHDR67Q.js"
     },
     {
       "Identity": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\polyfills-LZBJRJJE.js",
@@ -98,15 +106,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "browser/polyfills-LZBJRJJE.js",
+      "RelativePath": "browser/polyfills-LZBJRJJE#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "wsvwr1xwxp",
+      "Integrity": "ABiEQ3NGJxZDNSsTrxJxezaQUkqwjv/15p5mD4JHo+Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\browser\\polyfills-LZBJRJJE.js"
@@ -117,15 +127,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "browser/scripts-VQNG47P6.js",
+      "RelativePath": "browser/scripts-VQNG47P6#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "4h1kb1sccr",
+      "Integrity": "eJNrcy7fIJNaA2BZMxOnUNWhae9jLOxu6R7JM8iz+z8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\browser\\scripts-VQNG47P6.js"
@@ -136,18 +148,41 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "browser/styles-PDNHLCNM.css",
+      "RelativePath": "browser/styles-PDNHLCNM#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "g2vukk0qb2",
+      "Integrity": "OCPvRqZcItqw952z6xZ0uUsN/LUreV4jh9RyPenBNYE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\browser\\styles-PDNHLCNM.css"
+    },
+    {
+      "Identity": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\files\\credentials.json",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "files/credentials#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zfdiyldqs3",
+      "Integrity": "ccXtGcycTFONSIz2Xax53t7uRjTOW0/IIkXpwl8E+QE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\credentials.json"
     },
     {
       "Identity": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\files\\response.pdf",
@@ -155,18 +190,760 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "files/response.pdf",
+      "RelativePath": "files/response#[.{fingerprint}]?.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\files\\response.pdf"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "3rdpartylicenses.gdth67fahm.txt",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\3rdpartylicenses.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25920"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9GBai5nTLjRQynG58UVJFrOEwstj2ZHuR0KbU/+OVGI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Jul 2024 23:21:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gdth67fahm"
+        },
+        {
+          "Name": "label",
+          "Value": "3rdpartylicenses.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9GBai5nTLjRQynG58UVJFrOEwstj2ZHuR0KbU/+OVGI="
+        }
+      ]
+    },
+    {
+      "Route": "3rdpartylicenses.txt",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\3rdpartylicenses.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25920"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9GBai5nTLjRQynG58UVJFrOEwstj2ZHuR0KbU/+OVGI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Jul 2024 23:21:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9GBai5nTLjRQynG58UVJFrOEwstj2ZHuR0KbU/+OVGI="
+        }
+      ]
+    },
+    {
+      "Route": "browser/favicon.ico",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Dec 2023 16:07:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8="
+        }
+      ]
+    },
+    {
+      "Route": "browser/favicon.vagikyz9qx.ico",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 14 Dec 2023 16:07:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vagikyz9qx"
+        },
+        {
+          "Name": "label",
+          "Value": "browser/favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8="
+        }
+      ]
+    },
+    {
+      "Route": "browser/index.611qxe5i5w.html",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "564"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uhDGYHxFjfkopBEy0GhUJjTKaBxUpWtR3eDCrL8bxGM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Jul 2024 23:22:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "611qxe5i5w"
+        },
+        {
+          "Name": "label",
+          "Value": "browser/index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uhDGYHxFjfkopBEy0GhUJjTKaBxUpWtR3eDCrL8bxGM="
+        }
+      ]
+    },
+    {
+      "Route": "browser/index.html",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "564"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uhDGYHxFjfkopBEy0GhUJjTKaBxUpWtR3eDCrL8bxGM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Jul 2024 23:22:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uhDGYHxFjfkopBEy0GhUJjTKaBxUpWtR3eDCrL8bxGM="
+        }
+      ]
+    },
+    {
+      "Route": "browser/main-HMHDR67Q.js",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\main-HMHDR67Q.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "629300"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4y5ndTZmRBtro9F9JJCy+4wRqg8Rvx8au6sEqleiuVw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Jul 2024 23:21:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4y5ndTZmRBtro9F9JJCy+4wRqg8Rvx8au6sEqleiuVw="
+        }
+      ]
+    },
+    {
+      "Route": "browser/main-HMHDR67Q.zkr5koycc3.js",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\main-HMHDR67Q.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "629300"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4y5ndTZmRBtro9F9JJCy+4wRqg8Rvx8au6sEqleiuVw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Jul 2024 23:21:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zkr5koycc3"
+        },
+        {
+          "Name": "label",
+          "Value": "browser/main-HMHDR67Q.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4y5ndTZmRBtro9F9JJCy+4wRqg8Rvx8au6sEqleiuVw="
+        }
+      ]
+    },
+    {
+      "Route": "browser/polyfills-LZBJRJJE.js",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\polyfills-LZBJRJJE.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33478"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ABiEQ3NGJxZDNSsTrxJxezaQUkqwjv/15p5mD4JHo+Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Jul 2024 23:21:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ABiEQ3NGJxZDNSsTrxJxezaQUkqwjv/15p5mD4JHo+Q="
+        }
+      ]
+    },
+    {
+      "Route": "browser/polyfills-LZBJRJJE.wsvwr1xwxp.js",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\polyfills-LZBJRJJE.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33478"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ABiEQ3NGJxZDNSsTrxJxezaQUkqwjv/15p5mD4JHo+Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Jul 2024 23:21:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wsvwr1xwxp"
+        },
+        {
+          "Name": "label",
+          "Value": "browser/polyfills-LZBJRJJE.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ABiEQ3NGJxZDNSsTrxJxezaQUkqwjv/15p5mD4JHo+Q="
+        }
+      ]
+    },
+    {
+      "Route": "browser/scripts-VQNG47P6.4h1kb1sccr.js",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\scripts-VQNG47P6.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "61260"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eJNrcy7fIJNaA2BZMxOnUNWhae9jLOxu6R7JM8iz+z8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Jul 2024 23:21:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4h1kb1sccr"
+        },
+        {
+          "Name": "label",
+          "Value": "browser/scripts-VQNG47P6.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eJNrcy7fIJNaA2BZMxOnUNWhae9jLOxu6R7JM8iz+z8="
+        }
+      ]
+    },
+    {
+      "Route": "browser/scripts-VQNG47P6.js",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\scripts-VQNG47P6.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "61260"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eJNrcy7fIJNaA2BZMxOnUNWhae9jLOxu6R7JM8iz+z8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Jul 2024 23:21:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eJNrcy7fIJNaA2BZMxOnUNWhae9jLOxu6R7JM8iz+z8="
+        }
+      ]
+    },
+    {
+      "Route": "browser/styles-PDNHLCNM.css",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\styles-PDNHLCNM.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "233230"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OCPvRqZcItqw952z6xZ0uUsN/LUreV4jh9RyPenBNYE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Jul 2024 23:21:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OCPvRqZcItqw952z6xZ0uUsN/LUreV4jh9RyPenBNYE="
+        }
+      ]
+    },
+    {
+      "Route": "browser/styles-PDNHLCNM.g2vukk0qb2.css",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\styles-PDNHLCNM.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "233230"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OCPvRqZcItqw952z6xZ0uUsN/LUreV4jh9RyPenBNYE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Jul 2024 23:21:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g2vukk0qb2"
+        },
+        {
+          "Name": "label",
+          "Value": "browser/styles-PDNHLCNM.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OCPvRqZcItqw952z6xZ0uUsN/LUreV4jh9RyPenBNYE="
+        }
+      ]
+    },
+    {
+      "Route": "files/credentials.json",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\files\\credentials.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ccXtGcycTFONSIz2Xax53t7uRjTOW0/IIkXpwl8E+QE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 Aug 2024 22:51:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ccXtGcycTFONSIz2Xax53t7uRjTOW0/IIkXpwl8E+QE="
+        }
+      ]
+    },
+    {
+      "Route": "files/credentials.zfdiyldqs3.json",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\files\\credentials.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ccXtGcycTFONSIz2Xax53t7uRjTOW0/IIkXpwl8E+QE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 Aug 2024 22:51:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zfdiyldqs3"
+        },
+        {
+          "Name": "label",
+          "Value": "files/credentials.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ccXtGcycTFONSIz2Xax53t7uRjTOW0/IIkXpwl8E+QE="
+        }
+      ]
+    },
+    {
+      "Route": "files/response.5ipweew5fc.pdf",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\files\\response.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Jul 2024 23:22:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "files/response.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "files/response.pdf",
+      "AssetFile": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\files\\response.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Jul 2024 23:22:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
     }
   ]
 }

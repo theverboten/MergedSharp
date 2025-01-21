@@ -11,7 +11,9 @@ namespace API.Services
         public bool FileExistTest(string name)
         {
 
-            if (File.Exists(@"../API/wwwroot/files/" + name)) { return true; } else { return false; }
+            //if (File.Exists(@"../API/wwwroot/files/" + name)) { return true; } else { return false; }
+            if (File.Exists(@"wwwroot/files/" + name)) { Console.WriteLine(name + " does exist"); return true; } else { Console.WriteLine("File does not exist"); return false; }
+
 
 
         }

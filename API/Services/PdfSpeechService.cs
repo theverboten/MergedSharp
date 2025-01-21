@@ -137,7 +137,10 @@ namespace API.Services
 
         public async Task<ConvertedPdf> Base64Client()
         {
-            var request = new HttpRequestMessage(HttpMethod.Get, "http://localhost:5059/api/Database/get-uploaded-pdf/1");
+            // var request = new HttpRequestMessage(HttpMethod.Get, "http://localhost:5059/api/Database/get-uploaded-pdf/1");
+
+            var request = new HttpRequestMessage(HttpMethod.Get, "https://ctecka.fly.dev/api/Database/get-uploaded-pdf/1");
+
             var client = _httpClientFactory.CreateClient();
 
             HttpResponseMessage response = await client.SendAsync(request);
@@ -167,7 +170,10 @@ namespace API.Services
             byte[] bytes = Convert.FromBase64String(refinedBase64);
             Console.WriteLine("55");
             /*  File.WriteAllBytes("http://localhost:5059/files/response.pdf", bytes);*/
-            File.WriteAllBytes(@"../API/wwwroot/files/response.pdf", bytes);
+            // File.WriteAllBytes(@"../API/wwwroot/files/response.pdf", bytes);
+            // File.WriteAllBytes("https://ctecka.fly.dev/files/response.pdf", bytes);
+            File.WriteAllBytes(@"wwwroot/files/response.pdf", bytes);
+
             Console.WriteLine("66");
 
             var input = _pdfStringService.ExtractTextFromPdf();

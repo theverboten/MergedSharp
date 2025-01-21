@@ -10,6 +10,10 @@
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
     <PackageReference Include="CloudinaryDotNet" Version="1.22.0" />
     <PackageReference Include="dotenv.net" Version="3.1.2" />
+    <PackageReference Include="Google.Apis.Auth.AspNetCore3" Version="1.68.0" />
+    <PackageReference Include="Google.Cloud.BigQuery.V2" Version="3.10.0" />
+    <PackageReference Include="Google.Cloud.Datastore.V1" Version="4.13.0" />
+    <PackageReference Include="Google.Cloud.Iam.Credentials.V1" Version="2.4.0" />
     <PackageReference Include="Google.Cloud.TextToSpeech.V1" Version="3.2.0" />
     <PackageReference Include="itext7" Version="8.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0-rc.1*" />
@@ -20,9 +24,11 @@
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     <PackageReference Include="System.Net.Http.Json" Version="8.0.0" />
+    <PackageReference Include="Universal.Google.Authentication.OAuth2" Version="0.1.0" />
   </ItemGroup>
 
 </Project>

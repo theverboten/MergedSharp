@@ -10,15 +10,21 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
           "CloudinaryDotNet": "1.22.0",
+          "Google.Apis.Auth.AspNetCore3": "1.68.0",
+          "Google.Cloud.BigQuery.V2": "3.10.0",
+          "Google.Cloud.Datastore.V1": "4.13.0",
+          "Google.Cloud.Iam.Credentials.V1": "2.4.0",
           "Google.Cloud.TextToSpeech.V1": "3.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.0",
           "Microsoft.EntityFrameworkCore.Design": "8.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Newtonsoft.Json": "13.0.3",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0",
           "Swashbuckle.AspNetCore": "6.4.0",
           "System.Net.Http.Json": "8.0.0",
+          "Universal.Google.Authentication.OAuth2": "0.1.0",
           "dotenv.net": "3.1.2",
           "itext7": "8.0.2"
         },
@@ -73,88 +79,159 @@
           }
         }
       },
-      "Google.Api.CommonProtos/2.7.0": {
+      "Google.Api.CommonProtos/2.15.0": {
         "dependencies": {
-          "Google.Protobuf": "3.21.0"
+          "Google.Protobuf": "3.25.0"
         },
         "runtime": {
           "lib/netstandard2.0/Google.Api.CommonProtos.dll": {
-            "assemblyVersion": "2.7.0.0",
-            "fileVersion": "2.7.0.0"
+            "assemblyVersion": "2.15.0.0",
+            "fileVersion": "2.15.0.0"
           }
         }
       },
-      "Google.Api.Gax/4.3.0": {
+      "Google.Api.Gax/4.8.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
-          "lib/netstandard2.1/Google.Api.Gax.dll": {
-            "assemblyVersion": "4.3.0.0",
-            "fileVersion": "4.3.0.0"
+          "lib/netstandard2.0/Google.Api.Gax.dll": {
+            "assemblyVersion": "4.8.0.0",
+            "fileVersion": "4.8.0.0"
           }
         }
       },
-      "Google.Api.Gax.Grpc/4.3.0": {
+      "Google.Api.Gax.Grpc/4.8.0": {
         "dependencies": {
-          "Google.Api.CommonProtos": "2.7.0",
-          "Google.Api.Gax": "4.3.0",
-          "Google.Apis.Auth": "1.58.0",
-          "Grpc.Auth": "2.51.0",
-          "Grpc.Core.Api": "2.51.0",
-          "Grpc.Net.Client": "2.51.0",
+          "Google.Api.CommonProtos": "2.15.0",
+          "Google.Api.Gax": "4.8.0",
+          "Google.Apis.Auth": "1.68.0",
+          "Grpc.Auth": "2.60.0",
+          "Grpc.Core.Api": "2.60.0",
+          "Grpc.Net.Client": "2.60.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
         },
         "runtime": {
-          "lib/netstandard2.1/Google.Api.Gax.Grpc.dll": {
-            "assemblyVersion": "4.3.0.0",
-            "fileVersion": "4.3.0.0"
+          "lib/netstandard2.0/Google.Api.Gax.Grpc.dll": {
+            "assemblyVersion": "4.8.0.0",
+            "fileVersion": "4.8.0.0"
           }
         }
       },
-      "Google.Apis/1.58.0": {
+      "Google.Api.Gax.Rest/4.8.0": {
         "dependencies": {
-          "Google.Apis.Core": "1.58.0"
+          "Google.Api.Gax": "4.8.0",
+          "Google.Apis.Auth": "1.68.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Google.Apis.dll": {
-            "assemblyVersion": "1.58.0.0",
-            "fileVersion": "1.58.0.0"
+          "lib/netstandard2.0/Google.Api.Gax.Rest.dll": {
+            "assemblyVersion": "4.8.0.0",
+            "fileVersion": "4.8.0.0"
           }
         }
       },
-      "Google.Apis.Auth/1.58.0": {
+      "Google.Apis/1.68.0": {
         "dependencies": {
-          "Google.Apis": "1.58.0",
-          "Google.Apis.Core": "1.58.0"
+          "Google.Apis.Core": "1.68.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {
-            "assemblyVersion": "1.58.0.0",
-            "fileVersion": "1.58.0.0"
-          },
-          "lib/netstandard2.0/Google.Apis.Auth.dll": {
-            "assemblyVersion": "1.58.0.0",
-            "fileVersion": "1.58.0.0"
+          "lib/net6.0/Google.Apis.dll": {
+            "assemblyVersion": "1.68.0.0",
+            "fileVersion": "1.68.0.0"
           }
         }
       },
-      "Google.Apis.Core/1.58.0": {
+      "Google.Apis.Auth/1.68.0": {
+        "dependencies": {
+          "Google.Apis": "1.68.0",
+          "Google.Apis.Core": "1.68.0",
+          "System.Management": "7.0.2"
+        },
+        "runtime": {
+          "lib/net6.0/Google.Apis.Auth.dll": {
+            "assemblyVersion": "1.68.0.0",
+            "fileVersion": "1.68.0.0"
+          }
+        }
+      },
+      "Google.Apis.Auth.AspNetCore3/1.68.0": {
+        "dependencies": {
+          "Google.Apis.Auth": "1.68.0",
+          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "3.0.3",
+          "Microsoft.AspNetCore.Authorization": "3.0.3"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Google.Apis.Auth.AspNetCore3.dll": {
+            "assemblyVersion": "1.68.0.0",
+            "fileVersion": "1.68.0.0"
+          }
+        }
+      },
+      "Google.Apis.Bigquery.v2/1.67.0.3331": {
+        "dependencies": {
+          "Google.Apis": "1.68.0",
+          "Google.Apis.Auth": "1.68.0"
+        },
+        "runtime": {
+          "lib/net6.0/Google.Apis.Bigquery.v2.dll": {
+            "assemblyVersion": "1.67.0.3331",
+            "fileVersion": "1.67.0.3331"
+          }
+        }
+      },
+      "Google.Apis.Core/1.68.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
-          "lib/netstandard2.0/Google.Apis.Core.dll": {
-            "assemblyVersion": "1.58.0.0",
-            "fileVersion": "1.58.0.0"
+          "lib/net6.0/Google.Apis.Core.dll": {
+            "assemblyVersion": "1.68.0.0",
+            "fileVersion": "1.68.0.0"
+          }
+        }
+      },
+      "Google.Cloud.BigQuery.V2/3.10.0": {
+        "dependencies": {
+          "Google.Api.Gax.Rest": "4.8.0",
+          "Google.Apis.Bigquery.v2": "1.67.0.3331"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Cloud.BigQuery.V2.dll": {
+            "assemblyVersion": "3.10.0.0",
+            "fileVersion": "3.10.0.0"
+          }
+        }
+      },
+      "Google.Cloud.Datastore.V1/4.13.0": {
+        "dependencies": {
+          "Google.Api.Gax.Grpc": "4.8.0",
+          "Google.LongRunning": "3.3.0",
+          "System.Linq.Async": "6.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Cloud.Datastore.V1.dll": {
+            "assemblyVersion": "4.13.0.0",
+            "fileVersion": "4.13.0.0"
+          }
+        }
+      },
+      "Google.Cloud.Iam.Credentials.V1/2.4.0": {
+        "dependencies": {
+          "Google.Api.Gax.Grpc": "4.8.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Cloud.Iam.Credentials.V1.dll": {
+            "assemblyVersion": "2.4.0.0",
+            "fileVersion": "2.4.0.0"
           }
         }
       },
       "Google.Cloud.TextToSpeech.V1/3.2.0": {
         "dependencies": {
-          "Google.Api.Gax.Grpc": "4.3.0",
-          "Google.LongRunning": "3.0.0"
+          "Google.Api.Gax.Grpc": "4.8.0",
+          "Google.LongRunning": "3.3.0"
         },
         "runtime": {
           "lib/netstandard2.1/Google.Cloud.TextToSpeech.V1.dll": {
@@ -163,68 +240,65 @@
           }
         }
       },
-      "Google.LongRunning/3.0.0": {
+      "Google.LongRunning/3.3.0": {
         "dependencies": {
-          "Google.Api.Gax.Grpc": "4.3.0"
+          "Google.Api.Gax.Grpc": "4.8.0"
         },
         "runtime": {
-          "lib/netstandard2.1/Google.LongRunning.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
+          "lib/netstandard2.0/Google.LongRunning.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.0.0"
           }
         }
       },
-      "Google.Protobuf/3.21.0": {
+      "Google.Protobuf/3.25.0": {
         "runtime": {
           "lib/net5.0/Google.Protobuf.dll": {
-            "assemblyVersion": "3.21.0.0",
-            "fileVersion": "3.21.0.0"
+            "assemblyVersion": "3.25.0.0",
+            "fileVersion": "3.25.0.0"
           }
         }
       },
-      "Grpc.Auth/2.51.0": {
+      "Grpc.Auth/2.60.0": {
         "dependencies": {
-          "Google.Apis.Auth": "1.58.0",
-          "Grpc.Core.Api": "2.51.0"
+          "Google.Apis.Auth": "1.68.0",
+          "Grpc.Core.Api": "2.60.0"
         },
         "runtime": {
           "lib/netstandard2.0/Grpc.Auth.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.51.0.0"
+            "fileVersion": "2.60.0.0"
           }
         }
       },
-      "Grpc.Core.Api/2.51.0": {
-        "dependencies": {
-          "System.Memory": "4.5.3"
-        },
+      "Grpc.Core.Api/2.60.0": {
         "runtime": {
           "lib/netstandard2.1/Grpc.Core.Api.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.51.0.0"
+            "fileVersion": "2.60.0.0"
           }
         }
       },
-      "Grpc.Net.Client/2.51.0": {
+      "Grpc.Net.Client/2.60.0": {
         "dependencies": {
-          "Grpc.Net.Common": "2.51.0",
+          "Grpc.Net.Common": "2.60.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
         },
         "runtime": {
-          "lib/net7.0/Grpc.Net.Client.dll": {
+          "lib/net8.0/Grpc.Net.Client.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.51.0.0"
+            "fileVersion": "2.60.0.0"
           }
         }
       },
-      "Grpc.Net.Common/2.51.0": {
+      "Grpc.Net.Common/2.60.0": {
         "dependencies": {
-          "Grpc.Core.Api": "2.51.0"
+          "Grpc.Core.Api": "2.60.0"
         },
         "runtime": {
-          "lib/net7.0/Grpc.Net.Common.dll": {
+          "lib/net8.0/Grpc.Net.Common.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.51.0.0"
+            "fileVersion": "2.60.0.0"
           }
         }
       },
@@ -314,6 +388,24 @@
           "itext": "8.0.2"
         }
       },
+      "Microsoft.AspNetCore.Authentication.OpenIdConnect/3.0.3": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.5.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll": {
+            "assemblyVersion": "3.0.3.0",
+            "fileVersion": "3.0.320.7303"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authorization/3.0.3": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Metadata": "3.0.3",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Options": "8.0.0"
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/8.0.0": {},
       "Microsoft.AspNetCore.Cryptography.KeyDerivation/8.0.0": {
         "dependencies": {
@@ -348,6 +440,7 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Metadata/3.0.3": {},
       "Microsoft.AspNetCore.OpenApi/8.0.0": {
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
@@ -758,6 +851,64 @@
         }
       },
       "Microsoft.Extensions.Primitives/8.0.0": {},
+      "Microsoft.IdentityModel.JsonWebTokens/5.5.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "5.5.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "assemblyVersion": "5.5.0.0",
+            "fileVersion": "5.5.0.60624"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Logging/5.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {
+            "assemblyVersion": "5.5.0.0",
+            "fileVersion": "5.5.0.60624"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Protocols/5.5.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "5.5.0",
+          "Microsoft.IdentityModel.Tokens": "5.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll": {
+            "assemblyVersion": "5.5.0.0",
+            "fileVersion": "5.5.0.60624"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/5.5.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols": "5.5.0",
+          "Newtonsoft.Json": "13.0.3",
+          "System.IdentityModel.Tokens.Jwt": "5.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
+            "assemblyVersion": "5.5.0.0",
+            "fileVersion": "5.5.0.60624"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/5.5.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "5.5.0",
+          "Newtonsoft.Json": "13.0.3",
+          "System.Security.Cryptography.Cng": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {
+            "assemblyVersion": "5.5.0.0",
+            "fileVersion": "5.5.0.60624"
+          }
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.1": {},
       "Microsoft.NETCore.Targets/1.1.3": {},
       "Microsoft.OpenApi/1.4.3": {
@@ -789,7 +940,7 @@
       },
       "Mono.TextTemplating/2.2.1": {
         "dependencies": {
-          "System.CodeDom": "4.4.0"
+          "System.CodeDom": "7.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/Mono.TextTemplating.dll": {
@@ -828,6 +979,14 @@
           "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.0.0"
+          }
+        }
+      },
+      "Portable.BouncyCastle/1.8.3": {
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "assemblyVersion": "1.8.3.0",
+            "fileVersion": "1.8.3.27"
           }
         }
       },
@@ -1054,11 +1213,11 @@
           "System.Runtime": "4.3.1"
         }
       },
-      "System.CodeDom/4.4.0": {
+      "System.CodeDom/7.0.0": {
         "runtime": {
-          "lib/netstandard2.0/System.CodeDom.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.25519.3"
+          "lib/net7.0/System.CodeDom.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
           }
         }
       },
@@ -1231,6 +1390,19 @@
           "System.Runtime.InteropServices": "4.3.0"
         }
       },
+      "System.IdentityModel.Tokens.Jwt/5.5.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "5.5.0",
+          "Microsoft.IdentityModel.Tokens": "5.5.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {
+            "assemblyVersion": "5.5.0.0",
+            "fileVersion": "5.5.0.60624"
+          }
+        }
+      },
       "System.IO/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.1",
@@ -1265,6 +1437,36 @@
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.1",
           "System.Runtime.Extensions": "4.3.0"
+        }
+      },
+      "System.Linq.Async/6.0.1": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/System.Linq.Async.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.1.35981"
+          }
+        }
+      },
+      "System.Management/7.0.2": {
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/System.Management.dll": {
+            "assemblyVersion": "7.0.0.2",
+            "fileVersion": "7.0.723.27404"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net7.0/System.Management.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "7.0.0.2",
+            "fileVersion": "7.0.723.27404"
+          }
         }
       },
       "System.Memory/4.5.3": {},
@@ -1438,21 +1640,7 @@
           "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2"
         }
       },
-      "System.Security.Cryptography.Cng/4.3.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.1",
-          "System.IO": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.1",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Security.Cryptography.Algorithms": "4.3.0",
-          "System.Security.Cryptography.Encoding": "4.3.0",
-          "System.Security.Cryptography.Primitives": "4.3.0",
-          "System.Text.Encoding": "4.3.0"
-        }
-      },
+      "System.Security.Cryptography.Cng/4.5.0": {},
       "System.Security.Cryptography.Csp/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.1",
@@ -1531,7 +1719,7 @@
           "System.Runtime.InteropServices": "4.3.0",
           "System.Runtime.Numerics": "4.3.0",
           "System.Security.Cryptography.Algorithms": "4.3.0",
-          "System.Security.Cryptography.Cng": "4.3.0",
+          "System.Security.Cryptography.Cng": "4.5.0",
           "System.Security.Cryptography.Csp": "4.3.0",
           "System.Security.Cryptography.Encoding": "4.3.0",
           "System.Security.Cryptography.OpenSsl": "4.3.0",
@@ -1638,6 +1826,39 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
+      },
+      "Universal.Common.Net.Http/0.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/Universal.Common.Net.Http.dll": {
+            "assemblyVersion": "0.4.0.0",
+            "fileVersion": "0.4.0.0"
+          }
+        }
+      },
+      "Universal.Common.Serialization/1.3.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Universal.Common.Serialization.dll": {
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.3.0.0"
+          }
+        }
+      },
+      "Universal.Google.Authentication.OAuth2/0.1.0": {
+        "dependencies": {
+          "Portable.BouncyCastle": "1.8.3",
+          "System.IdentityModel.Tokens.Jwt": "5.5.0",
+          "Universal.Common.Net.Http": "0.4.0",
+          "Universal.Common.Serialization": "1.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Universal.Google.Authentication.OAuth2.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
       }
     }
   },
@@ -1675,47 +1896,89 @@
       "path": "dotenv.net/3.1.2",
       "hashPath": "dotenv.net.3.1.2.nupkg.sha512"
     },
-    "Google.Api.CommonProtos/2.7.0": {
+    "Google.Api.CommonProtos/2.15.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Wpg4yRGJxX8FE3Ife+Gsj556MDHuki4KqVlZ1jOvvFX6yianI/hbScgvGUlteM9uu7vzbfCyKLc0Sv5/53M3hg==",
-      "path": "google.api.commonprotos/2.7.0",
-      "hashPath": "google.api.commonprotos.2.7.0.nupkg.sha512"
+      "sha512": "sha512-k+43CTEgMbT4C2JjcIJon3GvMNFJ3kLMjPTedOkXUAt0D5cFfrlee+M4oieueAVhbXktR89yoj5O/kVmC/AKJw==",
+      "path": "google.api.commonprotos/2.15.0",
+      "hashPath": "google.api.commonprotos.2.15.0.nupkg.sha512"
     },
-    "Google.Api.Gax/4.3.0": {
+    "Google.Api.Gax/4.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gLJt1aHvLtU9jXlAavEUqF5RaobdgYXA+0b+gkhc0/pIylSztv5dK9Q7Uq+IyMXFzLMFkSEI++4DFeyYjuR1Bg==",
-      "path": "google.api.gax/4.3.0",
-      "hashPath": "google.api.gax.4.3.0.nupkg.sha512"
+      "sha512": "sha512-xlV8Jq/G5CQAA3PwYAuKGjfzGOP7AvjhREnE6vgZlzxREGYchHudZWa2PWSqFJL+MBtz9YgitLpRogANN3CVvg==",
+      "path": "google.api.gax/4.8.0",
+      "hashPath": "google.api.gax.4.8.0.nupkg.sha512"
     },
-    "Google.Api.Gax.Grpc/4.3.0": {
+    "Google.Api.Gax.Grpc/4.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-es+vstTeaNHHQzV+RKQJJxvlls6kWOaKH3FUW39TvfT5/e6Fy5r/xeCGnOzidI6dwn6tw7Q4pupylyLYqIJg/w==",
-      "path": "google.api.gax.grpc/4.3.0",
-      "hashPath": "google.api.gax.grpc.4.3.0.nupkg.sha512"
+      "sha512": "sha512-njcDsrFMZTmG2xdar6o5zyj7YVCUv6JNWU7un+q15Fm9DpGt0HSqHVnabVD2LBjUa3JWrqWX2kVv0w7qx4+tFQ==",
+      "path": "google.api.gax.grpc/4.8.0",
+      "hashPath": "google.api.gax.grpc.4.8.0.nupkg.sha512"
     },
-    "Google.Apis/1.58.0": {
+    "Google.Api.Gax.Rest/4.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OFIWLMbxL096T6L3b0cQLSQGAxRZWIZLNkjZtaYUQ5exz67aW7+Sd+OQnzdFGrV0yyTNlMOy+j6AqmdsenJHXA==",
-      "path": "google.apis/1.58.0",
-      "hashPath": "google.apis.1.58.0.nupkg.sha512"
+      "sha512": "sha512-zaA5LZ2VvGj/wwIzRB68swr7khi2kWNgqWvsB0fYtScIAl3kGkGtqiBcx63H1YLeKr5xau1866bFjTeReH6FSQ==",
+      "path": "google.api.gax.rest/4.8.0",
+      "hashPath": "google.api.gax.rest.4.8.0.nupkg.sha512"
     },
-    "Google.Apis.Auth/1.58.0": {
+    "Google.Apis/1.68.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8HAVH23c/O6ODdpedkw/2B3VqG4YKEMk0v0Sb6tEz7GRaiqGwdMntytr7iez0iFvCFDA5SkHnYDCNCIztnSMhA==",
-      "path": "google.apis.auth/1.58.0",
-      "hashPath": "google.apis.auth.1.58.0.nupkg.sha512"
+      "sha512": "sha512-s2MymhdpH+ybZNBeZ2J5uFgFHApBp+QXf9FjZSdM1lk/vx5VqIknJwnaWiuAzXxPrLEkesX0Q+UsiWn39yZ9zw==",
+      "path": "google.apis/1.68.0",
+      "hashPath": "google.apis.1.68.0.nupkg.sha512"
     },
-    "Google.Apis.Core/1.58.0": {
+    "Google.Apis.Auth/1.68.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-e1QpJz6hMuxN7Whm9ORl98dV9/6kM4UC+zNHGFO/S7OVV4wglFkix9DMidzdEmo3AGrs9KZSk69N+rYHJKqn+A==",
-      "path": "google.apis.core/1.58.0",
-      "hashPath": "google.apis.core.1.58.0.nupkg.sha512"
+      "sha512": "sha512-hFx8Qz5bZ4w0hpnn4tSmZaaFpjAMsgVElZ+ZgVLUZ2r9i+AKcoVgwiNfv1pruNS5cCvpXqhKECbruBCfRezPHA==",
+      "path": "google.apis.auth/1.68.0",
+      "hashPath": "google.apis.auth.1.68.0.nupkg.sha512"
+    },
+    "Google.Apis.Auth.AspNetCore3/1.68.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V57YW/73LnsXYvmE2QSHHzyyuLa9NImVKWJZm6tNmg0U++gEHScJMClHD6ORC+lq3YeDSBvNEocY3M18K+TgTQ==",
+      "path": "google.apis.auth.aspnetcore3/1.68.0",
+      "hashPath": "google.apis.auth.aspnetcore3.1.68.0.nupkg.sha512"
+    },
+    "Google.Apis.Bigquery.v2/1.67.0.3331": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n+7pa1HTVZkaCBNKj0mRWzuKw0UjQSbvvGJ8uJ1R0UClTY1IiuP2+WYTQA2UTXTjiQXwQCxiwi7rwtV0s+9oRg==",
+      "path": "google.apis.bigquery.v2/1.67.0.3331",
+      "hashPath": "google.apis.bigquery.v2.1.67.0.3331.nupkg.sha512"
+    },
+    "Google.Apis.Core/1.68.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pAqwa6pfu53UXCR2b7A/PAPXeuVg6L1OFw38WckN27NU2+mf+KTjoEg2YGv/f0UyKxzz7DxF1urOTKg/6dTP9g==",
+      "path": "google.apis.core/1.68.0",
+      "hashPath": "google.apis.core.1.68.0.nupkg.sha512"
+    },
+    "Google.Cloud.BigQuery.V2/3.10.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tZIy6vk9aEjUZu1C4LSjNM4j8JAIlK0qKna47GQZs5AzToLBXoYfJtJuwFZR5xVcuF23oJrcGN+jG/bubbjsRg==",
+      "path": "google.cloud.bigquery.v2/3.10.0",
+      "hashPath": "google.cloud.bigquery.v2.3.10.0.nupkg.sha512"
+    },
+    "Google.Cloud.Datastore.V1/4.13.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ebO091zWev5qBh+KmfS8rCqXMM1IfBTXCwdvTWcVfGJLsmpb37aQIbaEmwnSTjRlVQoVCxkT+v6BqM4FlFD15w==",
+      "path": "google.cloud.datastore.v1/4.13.0",
+      "hashPath": "google.cloud.datastore.v1.4.13.0.nupkg.sha512"
+    },
+    "Google.Cloud.Iam.Credentials.V1/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-64zU1EQMAC/MPacUYVOfQS4rgS6mdNuI2mc0Qi7q/ChWGWhGVfbU/4F3lj5eQ9jJN3r7anH04daeH8FerDzkDg==",
+      "path": "google.cloud.iam.credentials.v1/2.4.0",
+      "hashPath": "google.cloud.iam.credentials.v1.2.4.0.nupkg.sha512"
     },
     "Google.Cloud.TextToSpeech.V1/3.2.0": {
       "type": "package",
@@ -1724,47 +1987,47 @@
       "path": "google.cloud.texttospeech.v1/3.2.0",
       "hashPath": "google.cloud.texttospeech.v1.3.2.0.nupkg.sha512"
     },
-    "Google.LongRunning/3.0.0": {
+    "Google.LongRunning/3.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8+ctm1v0P90BX1fqQqyTaIrc/5zTTou3kyOsiLUJ6b1vfS/VtzF+L5onJoUDRAY0NWARSQBe73tewFm3ijWpYw==",
-      "path": "google.longrunning/3.0.0",
-      "hashPath": "google.longrunning.3.0.0.nupkg.sha512"
+      "sha512": "sha512-F2SZ83Jo466Wj/s1Z7QhIAmWBXxJZQyXZpcx0P8BR7d6s0FAj67vQjeUPESSJcvsy8AqYiYBhkUr2YpZhTQeHg==",
+      "path": "google.longrunning/3.3.0",
+      "hashPath": "google.longrunning.3.3.0.nupkg.sha512"
     },
-    "Google.Protobuf/3.21.0": {
+    "Google.Protobuf/3.25.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LKtDRauLeBFzwhK7JKpzvyNCvIxYRPX9mHjeuTj3gtG9F6JnSVqF1X2h+UZnQB47Ihi4+EipvbU1fEG7XNa30A==",
-      "path": "google.protobuf/3.21.0",
-      "hashPath": "google.protobuf.3.21.0.nupkg.sha512"
+      "sha512": "sha512-pIEkH1IqZV1iK8J5MYdG1kOyY0EoQLB6yEKvBq12RYNtvGXwCvnQg5zQsFmcqAEPtIZvSqPozIbUZaEd5a2gCg==",
+      "path": "google.protobuf/3.25.0",
+      "hashPath": "google.protobuf.3.25.0.nupkg.sha512"
     },
-    "Grpc.Auth/2.51.0": {
+    "Grpc.Auth/2.60.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-VYWlTq9xYvPpOAu2ISYQdgU3Qx6/h+iKjjmhGHBU1LvqsFAof0dYgIMqib69JjayI6les0qryPGu5Z5V5UNkfQ==",
-      "path": "grpc.auth/2.51.0",
-      "hashPath": "grpc.auth.2.51.0.nupkg.sha512"
+      "sha512": "sha512-mJAllsSsFix/wrp1l5QmHXRlzMFmnIGZJYuHG1thkDJPUE9ltHPkdL5x30xGpqKvka02Il2oHd66gt8YfSOIWg==",
+      "path": "grpc.auth/2.60.0",
+      "hashPath": "grpc.auth.2.60.0.nupkg.sha512"
     },
-    "Grpc.Core.Api/2.51.0": {
+    "Grpc.Core.Api/2.60.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WUYCnxZKfdBWCKNs08lWFRoTjESt3iyFDthsZu5KcWguZ4OnnXrTu/K5mIdO+R9dUhuw5Xm1ygUrI1e2q8d1YA==",
-      "path": "grpc.core.api/2.51.0",
-      "hashPath": "grpc.core.api.2.51.0.nupkg.sha512"
+      "sha512": "sha512-VWah+8dGJhhsay5BQ/Ljq6GYDWj0lSjdzqyoBgUQhXTbBqhs+q5dRFROKxI1xxzlL4pfUO45cf/y+KnHVFG9ew==",
+      "path": "grpc.core.api/2.60.0",
+      "hashPath": "grpc.core.api.2.60.0.nupkg.sha512"
     },
-    "Grpc.Net.Client/2.51.0": {
+    "Grpc.Net.Client/2.60.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6XybyqUGn5+8UTMRKAfbM+aXagR3qxHROIEeFyul5gvh/dF3UqpnpnTkcRKIae4n5+Bt8j1J1VdNqYyEvYoYyg==",
-      "path": "grpc.net.client/2.51.0",
-      "hashPath": "grpc.net.client.2.51.0.nupkg.sha512"
+      "sha512": "sha512-J9U96gjZHOcqSgAThg9vZZhLsbTD005bUggPtMP/RVQnGc3+tQJTpkRUCJtJWq9cykNydsRVoyU38TjPP/VJ4A==",
+      "path": "grpc.net.client/2.60.0",
+      "hashPath": "grpc.net.client.2.60.0.nupkg.sha512"
     },
-    "Grpc.Net.Common/2.51.0": {
+    "Grpc.Net.Common/2.60.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lAymSKjOHFopWt7RAF/Rxkf7SKGZaj+tJdabcnobm6XkdHX1zIQdkByeqIwmJesDbbCTpLEae6oSrn4eWWE9TQ==",
-      "path": "grpc.net.common/2.51.0",
-      "hashPath": "grpc.net.common.2.51.0.nupkg.sha512"
+      "sha512": "sha512-Y/917aplgD1RA0q1cd9WpnMGyl9Luu3WZl6ZMpPvNQwg2TNw/3uXUDSriDBybeCtxnKUCtxUcWO3WsVkhM1DcA==",
+      "path": "grpc.net.common/2.60.0",
+      "hashPath": "grpc.net.common.2.60.0.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1793,6 +2056,20 @@
       "sha512": "sha512-IuFfSlMSTLqVGCIsxpcDL9kCtEfppSBjq4V+RgfrxnqEC+iNF4tCHiIdl8quyzTDbaHF4vNufxe2NXMJMkPlSw==",
       "path": "itext7/8.0.2",
       "hashPath": "itext7.8.0.2.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.OpenIdConnect/3.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ovzy0Yd3cO7xeDuams4lTHW4z+3OHU0yyBERdi9qOLcBnbtz5rQqtIdPpog20jhZWMX2AcA9HB4mCUqPHyLz2w==",
+      "path": "microsoft.aspnetcore.authentication.openidconnect/3.0.3",
+      "hashPath": "microsoft.aspnetcore.authentication.openidconnect.3.0.3.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authorization/3.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4pL4KAgfHUeY6QBGudmL5XfegTxPbXIX2LHm40ZHcvmVQFFoCsKr+dcwVN710f0qQIYsS6QttsO3ZB2gFOTwtA==",
+      "path": "microsoft.aspnetcore.authorization/3.0.3",
+      "hashPath": "microsoft.aspnetcore.authorization.3.0.3.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/8.0.0": {
       "type": "package",
@@ -1835,6 +2112,13 @@
       "sha512": "sha512-ua2LSZY/f0BkNUUVPPm83eq4Xnt+FZYutiMimRrzSmv2K2t2Ia/PuP4CfibYNSwnKl6fbZ49Bwn2mQGWnmmvOA==",
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/8.0.0",
       "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Metadata/3.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4PYUwzlV5GKRHt1fjiGWEX3/zOudrQXrgKrkxHqOtTa79UFx0y2EE6k+zNZ58xSjVcbHuVh4ec0LaUiAdlf7dA==",
+      "path": "microsoft.aspnetcore.metadata/3.0.3",
+      "hashPath": "microsoft.aspnetcore.metadata.3.0.3.nupkg.sha512"
     },
     "Microsoft.AspNetCore.OpenApi/8.0.0": {
       "type": "package",
@@ -2046,6 +2330,41 @@
       "path": "microsoft.extensions.primitives/8.0.0",
       "hashPath": "microsoft.extensions.primitives.8.0.0.nupkg.sha512"
     },
+    "Microsoft.IdentityModel.JsonWebTokens/5.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cT9SCW/dN+ulrvAtbh37c36DR6aArENH3S4UtFmvXRx+VGC0ArDgzRaEbEh+ChS4koxdl2oS691250iZhgKvwg==",
+      "path": "microsoft.identitymodel.jsonwebtokens/5.5.0",
+      "hashPath": "microsoft.identitymodel.jsonwebtokens.5.5.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Logging/5.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1w/Hz/7+al+ugQn+6y0tAPmpN8U0u1aBtl1QXYCVkiJfbCC4tgyroFOuhdztOq48rgeM+3JW9bGqOtkfVurW8w==",
+      "path": "microsoft.identitymodel.logging/5.5.0",
+      "hashPath": "microsoft.identitymodel.logging.5.5.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Protocols/5.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m1gwAQwZjUxzRBC+4H40vYSo9Cms9yUbMdW492rQoXHU77G/ItiKxpk2+W9bWYcdsKUDKudye7im3T3MlVxEkg==",
+      "path": "microsoft.identitymodel.protocols/5.5.0",
+      "hashPath": "microsoft.identitymodel.protocols.5.5.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Protocols.OpenIdConnect/5.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-21F4QlbaD5CXNs2urNRCO6vljbbrhv3gmGT8P18SKGKZ9IYBCn29extoJriHiPfhABd5b8S7RcdKU50XhERkYg==",
+      "path": "microsoft.identitymodel.protocols.openidconnect/5.5.0",
+      "hashPath": "microsoft.identitymodel.protocols.openidconnect.5.5.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Tokens/5.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cu1klZiuCwVYbXHs0QdnseuoRGG1/85VX9d1Sk0vbJlKp+HJUN/4pAS/fe2m9bTOYyIPdeCHeksMiVHgo1EfAA==",
+      "path": "microsoft.identitymodel.tokens/5.5.0",
+      "hashPath": "microsoft.identitymodel.tokens.5.5.0.nupkg.sha512"
+    },
     "Microsoft.NETCore.Platforms/1.1.1": {
       "type": "package",
       "serviceable": true,
@@ -2108,6 +2427,13 @@
       "sha512": "sha512-GDXiMS9peEdjSCU/rfgyHruio7q6tYuywGaktqEi6UPQ6ILechp3fVVX+dHXkIXt4nklCBzYVWkzFrSL9ubKUA==",
       "path": "npgsql.entityframeworkcore.postgresql/8.0.0",
       "hashPath": "npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512"
+    },
+    "Portable.BouncyCastle/1.8.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rt9USPjS0nUNdWrGc5zTaBDMEAaDdgRyPMKl7bZM+tnaXRt2Xqk0ZD+Fq0BnZ9pz6O243Uw07WvxIGWkEgW+Hg==",
+      "path": "portable.bouncycastle/1.8.3",
+      "hashPath": "portable.bouncycastle.1.8.3.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",
@@ -2277,12 +2603,12 @@
       "path": "system.appcontext/4.1.0",
       "hashPath": "system.appcontext.4.1.0.nupkg.sha512"
     },
-    "System.CodeDom/4.4.0": {
+    "System.CodeDom/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2sCCb7doXEwtYAbqzbF/8UAeDRMNmPaQbU2q50Psg1J9KzumyVVCgKQY8s53WIPTufNT0DpSe9QRvVjOzfDWBA==",
-      "path": "system.codedom/4.4.0",
-      "hashPath": "system.codedom.4.4.0.nupkg.sha512"
+      "sha512": "sha512-GLltyqEsE5/3IE+zYRP5sNa1l44qKl9v+bfdMcwg+M9qnQf47wK3H0SUR/T+3N4JEQXF3vV4CSuuo0rsg+nq2A==",
+      "path": "system.codedom/7.0.0",
+      "hashPath": "system.codedom.7.0.0.nupkg.sha512"
     },
     "System.Collections/4.3.0": {
       "type": "package",
@@ -2403,6 +2729,13 @@
       "path": "system.globalization.extensions/4.3.0",
       "hashPath": "system.globalization.extensions.4.3.0.nupkg.sha512"
     },
+    "System.IdentityModel.Tokens.Jwt/5.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xa8kptJ+uf9hzj366f3pLcs5HFZ6dQMDKzEGq/yZNF0s3mVfyIhuQwgDcTJlAU4AROne/6Z5+vITwrW3gVNKIA==",
+      "path": "system.identitymodel.tokens.jwt/5.5.0",
+      "hashPath": "system.identitymodel.tokens.jwt.5.5.0.nupkg.sha512"
+    },
     "System.IO/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2437,6 +2770,20 @@
       "sha512": "sha512-5DbqIUpsDp0dFftytzuMmc0oeMdQwjcP/EWxsksIz/w1TcFRkZ3yKKz0PqiYFMmEwPSWw+qNVqD7PJ889JzHbw==",
       "path": "system.linq/4.3.0",
       "hashPath": "system.linq.4.3.0.nupkg.sha512"
+    },
+    "System.Linq.Async/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0YhHcaroWpQ9UCot3Pizah7ryAzQhNvobLMSxeDIGmnXfkQn8u5owvpOH0K6EVB+z9L7u6Cc4W17Br/+jyttEQ==",
+      "path": "system.linq.async/6.0.1",
+      "hashPath": "system.linq.async.6.0.1.nupkg.sha512"
+    },
+    "System.Management/7.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/qEUN91mP/MUQmJnM5y5BdT7ZoPuVrtxnFlbJ8a3kBJGhe2wCzBfnPFtK2wTtEEcf3DMGR9J00GZZfg6HRI6yA==",
+      "path": "system.management/7.0.2",
+      "hashPath": "system.management.7.0.2.nupkg.sha512"
     },
     "System.Memory/4.5.3": {
       "type": "package",
@@ -2585,12 +2932,12 @@
       "path": "system.security.cryptography.algorithms/4.3.0",
       "hashPath": "system.security.cryptography.algorithms.4.3.0.nupkg.sha512"
     },
-    "System.Security.Cryptography.Cng/4.3.0": {
+    "System.Security.Cryptography.Cng/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-03idZOqFlsKRL4W+LuCpJ6dBYDUWReug6lZjBa3uJWnk5sPCUXckocevTaUA8iT/MFSrY/2HXkOt753xQ/cf8g==",
-      "path": "system.security.cryptography.cng/4.3.0",
-      "hashPath": "system.security.cryptography.cng.4.3.0.nupkg.sha512"
+      "sha512": "sha512-WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
+      "path": "system.security.cryptography.cng/4.5.0",
+      "hashPath": "system.security.cryptography.cng.4.5.0.nupkg.sha512"
     },
     "System.Security.Cryptography.Csp/4.3.0": {
       "type": "package",
@@ -2724,6 +3071,27 @@
       "sha512": "sha512-lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "Universal.Common.Net.Http/0.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3yxY+34gTrYkP/ukQeK4iPVv4xylYQUmYiU48YEyJP8zV11Na7/EwdmYScn/KazIo8ThgAID5PWlhNhMwoO5IQ==",
+      "path": "universal.common.net.http/0.4.0",
+      "hashPath": "universal.common.net.http.0.4.0.nupkg.sha512"
+    },
+    "Universal.Common.Serialization/1.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p2v8z8KmsKDbA1WGt035EDPM60VfEY9Z5SPqBd7sbD4N+opA+CKSi9sdxWr2NYwi2qf1y0HB+NqbkZnDKUMmsA==",
+      "path": "universal.common.serialization/1.3.0",
+      "hashPath": "universal.common.serialization.1.3.0.nupkg.sha512"
+    },
+    "Universal.Google.Authentication.OAuth2/0.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jGL/GWaZVyNuPYRbzHSPhFiqBZ9S/wYVJ1NFjV4AEfZc0M4Ao6fcG8lf8c6qVwnvAdDwAFyMWvfhZ2jktcpjyA==",
+      "path": "universal.google.authentication.oauth2/0.1.0",
+      "hashPath": "universal.google.authentication.oauth2.0.1.0.nupkg.sha512"
     }
   }
 }

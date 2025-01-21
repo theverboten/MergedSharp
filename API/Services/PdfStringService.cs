@@ -37,11 +37,14 @@ namespace API.Services
                  return rec;
              }
          }*/
+        public string responsePath = @"wwwroot/files/response.pdf";
 
         public async Task<String> ExtractTextFromPdfAsync()
         {
             await Task.Delay(10000);
-            string path = @"../API/wwwroot/files/response.pdf";
+            //string path = @"../API/wwwroot/files/response.pdf";
+
+            string path = responsePath;
 
 
 
@@ -71,7 +74,9 @@ namespace API.Services
 
         public string ExtractTextFromPdf()
         {
-            string path = @"../API/wwwroot/files/response.pdf";
+            //string path = @"../API/wwwroot/files/response.pdf";
+
+            string path = responsePath;
 
 
             using (PdfReader reader = new PdfReader(path))
@@ -103,7 +108,8 @@ namespace API.Services
 
         public bool IsPdfAcceptable()
         {
-            string path = @"../API/wwwroot/files/response.pdf";
+            // string path = @"../API/wwwroot/files/response.pdf";
+            string path = responsePath;
 
 
             using (PdfReader reader = new PdfReader(path))
@@ -130,7 +136,8 @@ namespace API.Services
 
         public string FixedExtractTextFromPdf()
         {
-            string path = @"../API/wwwroot/files/response.pdf";
+            //string path = @"../API/wwwroot/files/response.pdf";
+            string path = responsePath;
 
 
             using (PdfReader reader = new PdfReader(path))

@@ -13,8 +13,8 @@
       "PackagePath": "staticwebassets\\browser\\index.html"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\main-S47ZJVFT.js",
-      "PackagePath": "staticwebassets\\browser\\main-S47ZJVFT.js"
+      "Id": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\main-HMHDR67Q.js",
+      "PackagePath": "staticwebassets\\browser\\main-HMHDR67Q.js"
     },
     {
       "Id": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\browser\\polyfills-LZBJRJJE.js",
@@ -29,8 +29,16 @@
       "PackagePath": "staticwebassets\\browser\\styles-PDNHLCNM.css"
     },
     {
+      "Id": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\files\\credentials.json",
+      "PackagePath": "staticwebassets\\files\\credentials.json"
+    },
+    {
       "Id": "C:\\Users\\hp\\Desktop\\GitMerge\\API\\wwwroot\\files\\response.pdf",
       "PackagePath": "staticwebassets\\files\\response.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props",
