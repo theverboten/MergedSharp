@@ -25,7 +25,6 @@ namespace API.Controllers
         private readonly Client _client;
 
         private readonly GoogleService _googleService;
-        private readonly IDownloadService _downloadService;
 
         private readonly HttpClient _httpClient;
 
@@ -35,9 +34,8 @@ namespace API.Controllers
 
         private readonly IPdfStringService _pdfStringService;
 
-        public PdfController(IPdfSpeechService pdfSpeechService, Client client, GoogleService googleService, IDownloadService downloadService, HttpClient httpClient, IStringConvertService stringConvertService, ITestingService testingService, IPdfStringService pdfStringService)
+        public PdfController(IPdfSpeechService pdfSpeechService, Client client, GoogleService googleService, HttpClient httpClient, IStringConvertService stringConvertService, ITestingService testingService, IPdfStringService pdfStringService)
         {
-            _downloadService = downloadService;
             _googleService = googleService;
             _client = client;
             _httpClient = httpClient;

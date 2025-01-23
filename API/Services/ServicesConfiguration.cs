@@ -19,7 +19,7 @@ namespace API.Services
             services.AddHttpClient<Client>();
             /*   services.Configure<CloudinaryService>(config.GetSection("CloudinarySettings"));*/
             services.AddScoped<ICloudinaryService, CloudinaryService>();
-            services.AddScoped<IDownloadService, DownloadService>();
+
 
             return services;
         }
