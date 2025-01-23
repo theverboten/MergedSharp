@@ -9,7 +9,7 @@ namespace API.Interfaces
 {
     public interface IPdfStringService
     {
-        Task<String> ExtractTextFromPdfAsync();
+        Task<string> ExtractTextFromPdfAsync();
         string ExtractTextFromPdf();
 
         string FixedExtractTextFromPdf();

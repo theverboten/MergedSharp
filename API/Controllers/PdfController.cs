@@ -48,16 +48,7 @@ namespace API.Controllers
 
         }
 
-        /*  [HttpGet("pdf-to-speech")]
-          public void PdfConvertion()
-          {
-
-              _pdfSpeechService.PdfConvertion();
-              Console.WriteLine("Pdf converted successfully in dotnet");
-              Ok();
-          }*/
         [HttpGet("tested-pdf-to-speech-sync")]
-        /* [HttpGet("pdf-to-speech-sync")]*/
         public void PdfOrderedConvertion()
         {
 
@@ -68,8 +59,7 @@ namespace API.Controllers
             Ok();
 
         }
-        [HttpGet("pdf-to-speech-sync")] // prohodil jsem url
-        /* [HttpGet("tested-pdf-to-speech-sync")]*/
+        [HttpGet("pdf-to-speech-sync")]
         public async Task<IActionResult> PdfTestedConvertion()
         {
 
@@ -80,74 +70,22 @@ namespace API.Controllers
             {
                 _stringConvertService.StringToSpeech(value.Content, value.PdfName);
                 Console.WriteLine("Pdf converted successfully in DotNet.");
+
                 return Ok();
             }
             else
             {
-                Console.WriteLine("Pdf has too much pages. Limit is 3.");
+                Console.WriteLine("Pdf has too many pages. Limit is 3.");
+
                 return BadRequest();
 
             }
             ;
 
-
-
-
-
-
-
         }
 
-        /*
-        [HttpGet("base64-client")]
-        public void Base64ClientTest()
-        {
 
-            _pdfSpeechService.Base64Client();
-            Console.WriteLine("Client was triggered in controller");
-        }
-        
-        [HttpGet("get-base64")]
-        public async Task Base64Convertion()
-        {
-            await _pdfSpeechService.Base64Convertion(_client._Client);
-            Ok();
-            /* 
-            await _pdfSpeechService.Base64Convertion(_client);
-            string? pdfString = await _client._Client.GetAsync("/");
-            Ok();*/
-        /*  } */          /*
-           [HttpGet("text-to-speech-test")]
-           public void TextSpeechTest()
-           {
-               _googleService.TextSpeechService();
-               Console.WriteLine("Text to speech API Worked!");
-           }  */
-        /*
-        [HttpGet("download-from-path")]
 
-        public void PathDownload()
-        {/*
-            string path = @"C:/Users/hp/Desktop/SharpTest/API/ConvertedPdf.mp3";
-            _downloadService.PdfDownload(path);
-            Console.WriteLine("API is functional");*/
-        /*   }*/
-        /*
-        [HttpGet("client")]
-
-        public void HttpClientDownload()
-        {
-            _downloadService.PdfClientDownload();
-            Console.WriteLine("HttpClient is functional");
-        }*/
-        /*
-        [HttpGet("get-bool")]
-
-        public bool BoolResponse()
-        {
-            return true;
-        }
-        */
         [HttpGet("does-file-exist/{name}")]
 
         public bool DoesFileExist(string name)
@@ -155,36 +93,12 @@ namespace API.Controllers
 
             var boolean = _testingService.FileExistTest($"{name}.mp3");
             Console.WriteLine(boolean);
+
             return boolean;
         }
 
-        /*
-                [HttpGet]
-                [Route("DownloadFile")]
 
-                public async Task<IActionResult> DownloadFile(string filename)
-                {
-                    await Task.Delay(3000);
-                    var filepath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\files", filename);
 
-                    var provider = new FileExtensionContentTypeProvider();
-
-                    if (!provider.TryGetContentType(filepath, out var contentType))
-                    {
-                        contentType = "application/octet-stream";
-                    }*/
-        /* var httpClient = new HttpClient();
-         var stream = await httpClient.GetStreamAsync()*/
-        /*  var bytes = await System.IO.File.ReadAllBytesAsync(filepath);
-          return File(bytes, contentType, Path.GetFileName(filepath));*/
-        /*
-         var httpClient = new HttpClient();
-         var stream = await httpClient.GetStreamAsync("http://localhost:5059/files/text.txt");
-         var route = @"C:\Users\hp\Desktop\SharpTest\API\wwwroot\files\text.txt";
-         using (var fileStream = File.Create(Path.Combine(route, "text.txt"))){
-             stream.CopyTo(fileStream);
-         }*//*
-    }*/
         [HttpGet]
         [Route("DownloadByStream/{filename}")]
         public async Task<IActionResult> Download(string filename)
@@ -194,16 +108,39 @@ namespace API.Controllers
             Console.WriteLine("DownloadByStream: " + fileName);
 
             /*  Stream stream = await _httpClient.GetStreamAsync(@"wwwroot/files/" + fileName + ".mp3");*/
-            Stream stream = await _httpClient.GetStreamAsync(@"https://ctecka.fly.dev/files/" + fileName + ".mp3");//pokus s https protokolem
+            Stream stream = await _httpClient.GetStreamAsync(@"https://ctecka.fly.dev/files/" + fileName + ".mp3");// pokus s https protokolem
 
 
             if (stream == null)
-                return NotFound(); // returns a NotFoundResult with Status404NotFound response.
 
-            /*return File(stream, "application/octet-stream", fileName); // returns a FileStreamResult*/
+                return NotFound(); // vrátí NotFoundResult
+
             Console.WriteLine("Download of " + fileName + " is successful");
 
-            return File(stream, "audio/mpeg", fileName + ".mp3"); // returns a FileStreamResult*/
+            return File(stream, "audio/mpeg", fileName + ".mp3"); // vrátí FileStreamResult
+
+
+
+
+        }
+
+        [HttpGet]
+        [Route("DownloadTestFile")]
+        public async Task<IActionResult> DownloadTestFile()
+        {
+            await Task.Delay(1000);
+            Console.WriteLine("DownloadTestFile: HelloWorld.pdf");
+
+            /*  Stream stream = await _httpClient.GetStreamAsync(@"wwwroot/files/" + fileName + ".mp3");*/
+            Stream stream = await _httpClient.GetStreamAsync(@"https://ctecka.fly.dev/files/HelloWorld.pdf");
+
+
+            if (stream == null)
+                return NotFound(); // vrátí NotFoundResult
+
+            Console.WriteLine("Download of HelloWorld.pdf is successful");
+
+            return File(stream, "application/pdf", "HelloWorld.pdf"); // vrátí FileStreamResult
 
 
 
@@ -215,8 +152,8 @@ namespace API.Controllers
         public async Task<IActionResult> Delete(string filename)
         {
             await Task.Delay(100);
-            /*
-            string fileName = filename.Replace(".pdf", String.Empty); ;*/
+
+            /* string fileName = filename.Replace(".pdf", String.Empty); ;*/
             _stringConvertService.DeleteSpeech(filename);
 
             return Ok();
@@ -230,9 +167,7 @@ namespace API.Controllers
         {
 
             await Task.Delay(500);
-
             await Download(filename);
-
             await Delete(filename);
 
             return Ok();
@@ -248,18 +183,6 @@ namespace API.Controllers
             string projectName = System.IO.Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location).ToString();
             Console.WriteLine("Project name is: " + projectName);
         }
-
-        /*
-        public void HttpClientDownload()
-        {
-            _downloadService.PdfClientDownload();
-            Console.WriteLine("HttpClient is functional");
-            File.Delete(@"C:\Users\hp\Desktop\SharpTest\API\wwwroot\files\" + pdfName + ".mp3");
-        }
-         */
-
-
-
 
     }
 

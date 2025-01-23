@@ -1,14 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using API.Entities;
 using API.Interfaces;
-using Google.Cloud.TextToSpeech.V1;
 using iText.Kernel.Pdf;
 using iText.Kernel.Pdf.Canvas.Parser;
-using iText.Kernel.Pdf.Canvas.Parser.Listener;
 
 namespace API.Services
 {
@@ -39,7 +33,7 @@ namespace API.Services
          }*/
         public string responsePath = @"wwwroot/files/response.pdf";
 
-        public async Task<String> ExtractTextFromPdfAsync()
+        public async Task<string> ExtractTextFromPdfAsync()
         {
             await Task.Delay(10000);
             //string path = @"../API/wwwroot/files/response.pdf";
@@ -100,7 +94,7 @@ namespace API.Services
                 convertedPdf.Content = text.ToString();
 
                 string response = convertedPdf.Content;
-                /*  Console.WriteLine(response);*/
+                //  Console.WriteLine(response);
 
                 return response;
             }

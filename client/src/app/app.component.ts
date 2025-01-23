@@ -12,7 +12,7 @@ export class AppComponent {
   baseUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) {}
-
+  /*
   convertPdf() {
     this.http.get(this.baseUrl + `Pdf/pdf-to-speech`).subscribe(
       (data) => {
@@ -23,10 +23,5 @@ export class AppComponent {
       }
     );
     console.log('Done succesfully in Angular');
-  }
-  /*
-  testingAPI() {
-    this.http.get(`http://localhost:5059/Image/test`);
-    console.log('Text is printed from Angular');
   }*/
 }

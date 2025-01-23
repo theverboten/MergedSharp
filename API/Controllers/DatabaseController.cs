@@ -18,15 +18,8 @@ namespace API.Controllers
         {
             _context = context;
         }
-        /*
-       [HttpGet("get-data")]
-       public ActionResult<IEnumerable<ConvertedPdf>> GetData()
-       {
-           var data = _context.StoredPdf.ToList();
 
-           return data;
-       }
-       */
+
         [HttpGet("{id}")]
         public ActionResult<ConvertedPdf> GetPdfById(int id)
         {
@@ -45,16 +38,8 @@ namespace API.Controllers
             _context.StoredPdf.Add(convertedPdf);
             _context.SaveChanges();
             return CreatedAtAction(nameof(GetPdfById), new { id = convertedPdf.Id, }, convertedPdf);
-        }/*
+        }
 
-       [HttpPut("put-data")]
-
-       public ActionResult<ConvertedPdf> UpdatePdf([FromBody] ConvertedPdf convertedPdf)
-       {
-           _context.StoredPdf.Update(convertedPdf);
-           _context.SaveChanges();
-           return CreatedAtAction(nameof(GetPdfById), new { id = convertedPdf.Id, }, convertedPdf);
-       }*/
 
         [HttpPut("upload-pdf")]
 
@@ -95,29 +80,6 @@ namespace API.Controllers
             _context.SaveChanges();
             return Ok();
         }
-        /*
-        [HttpPut("upload-pdf-json")]
-
-        public ActionResult<ConvertedPdf> UpdatePdfWithJson(ConvertedPdf information)
-        {
-            Console.WriteLine(information);
-            Console.WriteLine("Information was received"); ;
-            _context.StoredPdf.Update(information);
-            _context.SaveChanges();
-            return Ok();
-        }*/
-        /*
-       [HttpPost("post-into-database")]
-
-       public ActionResult<ConvertedPdf> PostIntoDatabase(ConvertedPdf information)
-       {
-           Console.WriteLine(information.PdfName);
-           Console.WriteLine("Information was received"); ;*/
-        /*  ConvertedPdf databasePdf = new ConvertedPdf { Id = information.Id, PdfName = information.PdfName, Content = information.Content };*/
-        /*   _context.StoredPdf.Update(information);
-           _context.SaveChanges();
-           return Ok();
-       }*/
 
 
 
@@ -131,17 +93,7 @@ namespace API.Controllers
             }
             return pdf;
         }
-        /*
-        [HttpGet("check-database-value/{id}")]
-        public ActionResult<string> CheckDatabaseById(int id)
-        {
-            var pdf = _context.StoredPdf.Find(id);
-            if (pdf == null)
-            {
-                return NotFound();
-            }
-            return pdf.Content;
-        }*/
+
 
     }
 }

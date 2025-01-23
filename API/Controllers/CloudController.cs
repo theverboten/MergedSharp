@@ -37,7 +37,6 @@ namespace API.Controllers
             };
 
             return audio.PublicId;
-            /* PublicId = SharpTest/bcndiko2ayuj3ywbxhsd*/
         }
 
         [HttpDelete("delete-audio")]

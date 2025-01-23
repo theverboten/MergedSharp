@@ -8,9 +8,8 @@ namespace API.Interfaces
 {
     public interface IDownloadService
     {
-        FileStreamResult PdfDownload(string path);
-        void PdfClientDownload();
+        //  FileStreamResult PdfDownload(string path);
+        //  void PdfClientDownload();
 
-        public Task<IActionResult> DownloadFile(string filename);
     }
 }

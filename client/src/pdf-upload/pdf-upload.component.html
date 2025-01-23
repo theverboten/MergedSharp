@@ -1,9 +1,11 @@
 <div style="display: flex; margin-top: 3em">
   <p>Nahrajte PDF soubor v angličtině, jehož velikost nepřesahuje 3 stránky:</p>
 </div>
-
-<p>Aplikace je aktuálně v údržbě. Vyčkejte prosím na její spuštění</p>
-<!--<p>{{ this.baseUrl }}</p>-->
+<div>
+  <button (click)="completeDownloadOfPdf()">
+    Stáhnout testovací HelloWorld.pdf
+  </button>
+</div>
 
 <div style="display: flex; margin-top: 1em">
   <input type="file" (change)="onFileSelected($event)" />
@@ -12,26 +14,6 @@
   <p>Nesprávný typ souboru. Nahrajte soubor typu PDF</p>
 </div>
 
-<!--<button (click)="downloadFile()">Download File</button>
-
-<button (click)="prepareBase64(this.base64)">Put Base64 to Database</button>
-
-<p>{{ this.mess.base64 }}</p>
-<p>{{ this.cont.content }}</p>
-<div *ngIf="this.cont.content === this.base64">
-  Content to render when condition is true.
-</div>
-
-<button (click)="pdfToSpeech(base64)">Convert Pdf to Speech</button>
-
-<button (click)="uploadStringToDatabase(base64)">
-  Upload string to database
-</button>
-
-<button (click)="postgresPdfToSpeech(this.base64)">
-  Convert string to Postgres database
-</button>
-<p>Complete Convertion</p>-->
 <div *ngIf="convertionButtonBool && !this.fileDoesNotExist">
   <button (click)="whileCheckConvertion()">Konvertovat soubor</button>
 </div>
@@ -51,40 +33,6 @@
   </p>
 </div>
 
-<!--
-<div *ngIf="convertionButtonBool">
-  <button (click)="deleteFile()">Odstranit soubor z paměti po stažení</button>
-</div>-->
-
-<!--<a
-  id="download"
-  href="http://localhost:5059/api/Pdf/DownloadByStream"
-  download="HELLO.txt"
-></a>
-<p>{{ this.cont.pdfName }}</p>
-<p>{{ this.downloadedPdfName }}</p>-->
-<!--<button (click)="downloadPdf()">Stáhnout Pdf</button>
-
-<form
-  action="http://localhost:5059/api/Pdf/DownloadByStream/{{ cont.pdfName }}"
->
-  <input type="submit" value="Stáhnout soubor" />
-</form>-->
-
-<!--<button (click)="getBool()">Get Bool</button>
-
-<p>{{ this.databaseBool }}</p>-->
-<!--
-<div *ngIf="databaseBool">
-  <a href="{{ this.baseUrl }}Pdf/DownloadByStream/{{ this.cont.pdfName }}"
-    >Stáhnout {{ this.cont.pdfName }}</a
-  >
-</div>-->
 <div *ngIf="databaseBool && fileDoesExist">
-  <!--<p>{{ this.fileDoesExist }}</p>-->
-
   <button (click)="completeDownload()">Stáhnout</button>
 </div>
-<!--<form action="http://localhost:5059/api/Pdf/DownloadByStream/HelloThere.pdf">
-  <input type="submit" value="download" />
-</form>-->
